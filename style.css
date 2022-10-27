@@ -146,6 +146,10 @@ p {
 }
 
 /* About */
+#about {
+  padding: 80px;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -209,45 +213,6 @@ p {
 }
 
 /* Work */
-
-.work__categories {
-  margin: 40px;
-}
-
-.category__btn {
-  border: 1px solid var(--color-dark-white);
-  border-radius: var(--size-border-radius);
-  font-size: var(--font-regular);
-  padding: 8px 48px;
-}
-
-.category__btn.active,
-.category__btn:hover {
-  background-color: var(--color-pink);
-  color: var(--color-white);
-}
-
-.category__btn.active .category__count,
-.category__btn:hover .category__count {
-  opacity: 1;
-  top: 0;
-}
-
-.category__count {
-  background-color: var(--color-orange);
-  border-radius: 50%;
-  color: var(--color-white);
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  display: inline-block;
-  position: relative;
-  top: -20px;
-  left: 4px;
-  opacity: 0;
-  transition: all var(--animation-duration) ease-in;
-}
-
 .work__projects {
   display: flex;
   flex-wrap: wrap;
@@ -262,6 +227,7 @@ p {
   width: 280px;
   height: 250px;
   margin: 2px;
+  padding: 8px;
   background-color: var(--color-light-white);
 }
 
