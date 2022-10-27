@@ -2,11 +2,12 @@
 :root {
   /* Color */
   --white: #ffffff;
-  --light-purple: #e8eaf6;
-  --neutral-purple: #c0b3c2;
-  --vivid-purple: #e6ceff;
+  --light-purple: #ede7f6;
+  --neutral-purple: #c5cae9;
+  --vivid-purple: #6f79a8;
   --dark-navy: #49599a;
   --light-gray: #b4b8c1;
+  --purple: #d1c4e9;
 
   /* Font size */
   --large: 48px;
@@ -38,7 +39,6 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 ul {
@@ -93,7 +93,7 @@ p {
   background-color: var(--neutral-purple);
   align-items: center;
   color: var(--white);
-  padding: 5px;
+  padding: 1px;
 }
 
 .navbar__menu {
@@ -102,6 +102,11 @@ p {
 
 .navbar__logo {
   font-size: var(--small);
+  padding: 32px;
+}
+
+.navbar__author {
+  color: white;
 }
 
 .navbar__menu__items {
@@ -123,31 +128,35 @@ p {
 #default {
   background-color: var(--light-purple);
   text-align: center;
-  padding: 40px;
+  padding: 30px;
 }
 
 .default__title:hover {
   color: var(--dark-navy);
+  transform: rotate(-10deg) scale(1.1);
+  padding: 8px;
 }
 
 .avatar {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  padding: 16px;
 }
 
 .default__contact {
   color: var(--light-gray);
   font-size: var(--regular);
-  margin: 24px;
-  padding: 8px 12px;
+  margin: 10px;
+  padding: 7px;
   border: 2px solid;
   border-radius: var(--regular);
 }
 
 /* About */
 #about {
-  padding: 80px;
+  padding: 40px;
+  background-color: var(--purple);
 }
 
 .about__majors {
@@ -168,7 +177,7 @@ p {
 }
 
 .major__icon i {
-  transition: all var(--animation-duration) ease;
+  transition: all 300ms ease;
 }
 
 .major__icon:hover i {
@@ -178,11 +187,11 @@ p {
 
 .major__title,
 .major__description {
-  color: var(--color-dark-grey);
+  /* color: var(--color-dark-grey); */
 }
 
 .major__description {
-  font-size: var(--font-small);
+  font-size: var(--small);
 }
 
 .job {
@@ -191,7 +200,7 @@ p {
 }
 
 .job__logo {
-  width: 80px;
+  width: 70px;
 }
 
 .job__description {
@@ -199,17 +208,12 @@ p {
   text-align: left;
 }
 
-.job__name,
-.job__period {
-  color: var(--color-light-grey);
-}
-
 .job__name {
-  font-size: var(--font-small);
+  font-size: var(--small);
 }
 
 .job__period {
-  font-size: var(--font-micro);
+  font-size: var(--micro);
 }
 
 /* Work */
@@ -228,7 +232,6 @@ p {
   height: 250px;
   margin: 2px;
   padding: 8px;
-  background-color: var(--color-light-white);
 }
 
 .project__img {
@@ -249,7 +252,8 @@ p {
   left: 0;
   opacity: 0;
   transform: translateY(10px);
-  transition: all var(--animation-duration) ease-in;
+  transition: all var(300ms) ease-in;
+  color: white;
 }
 
 .project:hover .project__description {
@@ -258,7 +262,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--white);
 }
 
 .project__description h3:after {
@@ -270,5 +274,11 @@ p {
   height: 2px;
   margin-left: -12px;
   margin-top: 8px;
-  background-color: var(--color-dark-white);
+  background-color: var(--white);
+}
+
+.contact__title,
+.contact__email,
+.contact__links {
+  padding: 10px;
 }
