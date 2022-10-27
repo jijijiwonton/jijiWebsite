@@ -2,8 +2,11 @@
 :root {
   /* Color */
   --white: #ffffff;
+  --light-purple: #e8eaf6;
   --neutral-purple: #c0b3c2;
   --vivid-purple: #e6ceff;
+  --dark-navy: #49599a;
+  --light-gray: #b4b8c1;
 
   /* Font size */
   --large: 48px;
@@ -25,6 +28,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 body {
@@ -40,6 +44,13 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -67,6 +78,11 @@ p {
   margin: 4px 0;
 }
 
+/* Section */
+.section {
+  padding: 50px;
+  text-align: center;
+}
 /* Navbar */
 #navbar {
   display: flex;
@@ -97,5 +113,31 @@ p {
 }
 
 .navbar__menu__items:hover {
-  background-color: var(--vivid-purple);
+  background-color: var(--light-purple);
+}
+
+/* Default */
+#default {
+  background-color: var(--light-purple);
+  text-align: center;
+  padding: 40px;
+}
+
+.default__title:hover {
+  color: var(--dark-navy);
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.default__contact {
+  color: var(--light-gray);
+  font-size: var(--regular);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid;
+  border-radius: var(--regular);
 }
