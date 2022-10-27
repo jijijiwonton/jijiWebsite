@@ -2,15 +2,15 @@
 :root {
   /* Color */
   --white: #ffffff;
-  --light-purple: #ede7f6;
-  --neutral-purple: #c5cae9;
-  --vivid-purple: #6f79a8;
-  --dark-navy: #49599a;
-  --light-gray: #b4b8c1;
-  --purple: #d1c4e9;
+  --light-brown: #bcaaa4;
+  --chocolate-brown: #8d6e63;
+  --dark-yellow: #ffd95b;
+  --deep-dark-yellow: #c77800;
+  --light-yellow: #ffe0b2;
 
   /* Font size */
   --large: 48px;
+  --semi-large: 32px;
   --medium: 28px;
   --regular: 18px;
   --small: 16px;
@@ -26,7 +26,6 @@
 }
 
 /* Universal tags */
-
 * {
   box-sizing: border-box;
   font-family: "Nanum Myeongjo", serif;
@@ -55,9 +54,12 @@ button {
 
 /* Typography */
 h1 {
-  font-size: var(--large);
-  font-weight: var(--bold);
-  margin: 16px 0;
+  font-family: "Shadows Into Light", cursive;
+  font-size: var(--semi-large);
+  font-weight: var(--regular);
+  padding: 20px;
+  margin: 12px 0px;
+  margin: auto;
 }
 
 h2 {
@@ -73,7 +75,8 @@ h3 {
 }
 
 p {
-  font-size: var(--regular);
+  font-family: "Nanum Myeongjo", serif;
+  font-size: var(--small);
   font-weight: var(--regular);
   margin: 4px 0;
 }
@@ -89,11 +92,21 @@ p {
 /* Navbar */
 #navbar {
   display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   justify-content: space-between;
-  background-color: var(--neutral-purple);
   align-items: center;
   color: var(--white);
+  background-color: var(--light-brown);
   padding: 1px;
+}
+
+/** Linked to Js */
+#navbar.navbar__dark {
+  background-color: var(--dark-yellow);
+  padding: 2px;
+  opacity: 0.5;
 }
 
 .navbar__menu {
@@ -102,7 +115,7 @@ p {
 
 .navbar__logo {
   font-size: var(--small);
-  padding: 32px;
+  padding: 2px;
 }
 
 .navbar__author {
@@ -110,8 +123,8 @@ p {
 }
 
 .navbar__menu__items {
-  padding: 8px 12px;
-  margin: 0 4px;
+  padding: 4px 8px;
+  margin: 4px 8px;
   cursor: pointer;
   border-radius: var(--border-radius);
 }
@@ -121,18 +134,18 @@ p {
 }
 
 .navbar__menu__items:hover {
-  background-color: var(--light-purple);
+  color: var(--chocolate-brown);
 }
 
 /* Default */
 #default {
-  background-color: var(--light-purple);
+  background-color: var(--light-brown);
   text-align: center;
-  padding: 30px;
+  padding: 40px;
 }
 
 .default__title:hover {
-  color: var(--dark-navy);
+  color: var(--dark-yellow);
   transform: rotate(-10deg) scale(1.1);
   padding: 8px;
 }
@@ -144,25 +157,16 @@ p {
   padding: 16px;
 }
 
-.default__contact {
-  color: var(--light-gray);
-  font-size: var(--regular);
-  margin: 10px;
-  padding: 7px;
-  border: 2px solid;
-  border-radius: var(--regular);
-}
-
 /* About */
 #about {
   padding: 40px;
-  background-color: var(--purple);
+  background-color: var(--light-yellow);
 }
 
 .about__majors {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  margin: 60px 0;
 }
 
 .major__icon {
@@ -181,13 +185,8 @@ p {
 }
 
 .major__icon:hover i {
-  color: var(--dark-navy);
+  color: var(--deep-dark-yellow);
   transform: rotate(-30deg) scale(1.1);
-}
-
-.major__title,
-.major__description {
-  /* color: var(--color-dark-grey); */
 }
 
 .major__description {
@@ -259,10 +258,6 @@ p {
 .project:hover .project__description {
   opacity: 0.8;
   transform: translateY(0px);
-}
-
-.project__description h3 {
-  color: var(--white);
 }
 
 .project__description h3:after {

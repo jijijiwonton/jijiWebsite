@@ -4,19 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Awesome font link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Shadows+Into+Light&family=Unna&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+    rel="stylesheet"
+    />
+    <!-- CSS link -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Title logo -->
     <link rel="icon" type="image/x-icon" href="images/jiwon.jpg" />
     <title>Jiwon Hwang</title>
+    <!-- JavaScript link -->
     <script src="main.js" defer></script>
   </head>
   <body>
+
     <!-- Navigation bar -->
     <nav id="navbar">
       <div class="navbar__logo">
@@ -27,8 +40,11 @@
         <ul class="navbar__menu">
             <li class="navbar__menu__items active" data-link="#default">Default</li>
             <li class="navbar__menu__items" data-link="#about">About</li>
-            <li class="navbar__menu__items" data-link="#technical">Technical</li>
+            <a href="notes.html" target="blank">
+              <li class="navbar__menu__items" data-link="#technical">Technical</li>
+            </a>
             <li class="navbar__menu__items" data-link="#work">Project</li>
+            <li class="navbar__menu__items" data-link="#testimonial">Testimonial</li>
             <li class="navbar__menu__items" data-link="#contact">Contact</li>
         </ul>
       </div>
@@ -37,34 +53,29 @@
       <!-- Default -->
       <section id="default">
         <h1>Junior Software Developer</h1>
-        <img src="images/jiwon.jpg" alt="jiwon_selfie" class="avatar" />
+        <img src="images/normal-jiwon.jpg" alt="jiwon_selfie" class="avatar" />
         <h1 class="default__title">Hi, I'm Jiwon</h1>
-        <h2 class="default__description">
+        <p class="default__description">
           I was working as a Co-op QA developer for 8 months. <br/>
           A potential person who has unlimited values in Canada!
-        </h2>
-        <button class="default__contact">Contact Jiwon</button>
+        </p>
       </section>
 
-      <section id="about" class="section section__container">
+      <!-- About -->
+      <section id="about" class="section">
         <h1>Who am I</h1>
-        <br/>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
-          rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
-          deserunt doloremque laudantium similique corrupti, iusto optio rerum in
-          deleniti officia.
-        </p>
         <div class="about__majors">
+          <!-- Frontend -->
           <div class="major">
             <div class="major__icon">
               <i class="fa-brands fa-react"></i>
             </div>
             <h2 class="major__title">Frontend</h2>
-            <div class="major__description">
+            <p class="major__description">
               HTML, CSS, JavaScript, <br/> React, Web APIs
-            </div>
+            </p>
           </div>
+          <!-- Mobile -->
           <div class="major">
             <div class="major__icon">
               <i class="fas fa-mobile"></i>
@@ -74,6 +85,7 @@
               Android, iOS, Flutter
             </p>
           </div>
+          <!-- Backend -->
           <div class="major">
             <div class="major__icon">
               <i class="fas fa-server"></i>
@@ -83,6 +95,7 @@
               Java, MySQL, Firebase
             </p>
           </div>
+          <!-- QA -->
           <div class="major">
             <div class="major__icon">
               <i class="fa-solid fa-bug-slash"></i>
@@ -97,7 +110,7 @@
           <div class="job">
             <img
               src="images/kinaxis.png"
-              alt="samsung"
+              alt="kinaxis"
               class="job__logo"
             />
            <div class="job__description">
@@ -108,11 +121,10 @@
            </div>
           </div>
       </section>
+
     <!-- Work -->
     <section id="work" class="section">
-      <div class="section__container">
        <h1>Playground</h1>
-       <h3>Projects</h3>
        <div class="work__projects">
          <a href="https://github.com/jijijiwonton/BankAccount" class="project" target="blank">
            <img
@@ -199,7 +211,7 @@
              <span>All languages</span>
            </div>
          </a>
-         <a href="" class="project">
+         <a href="#" class="project">
           <img
           src="images/jiwon.jpg"
           alt="#"
@@ -211,19 +223,18 @@
            </div>
          </a>
        </div>
-      </div>
      </section>
+
       <!-- terstimonial -->
     <section id="testimonial" class="section">
       <div class="section__container">
         <h1>Testimonial</h1>
-        <h3>What they say about me</h3>
         <div class="testimonials">
           <div class="testimonial">
             <img
-              src="image/testimonial__avatar.jpg"
-              alt=""
-              class="testimonial__avatar"
+              src="images/kinaxis.png"
+              alt="kinaxis"
+              class="job__logo"
             />
             <div class="testimonial__speach">
               <p>
@@ -234,17 +245,18 @@
                 Jiwon has been an amazing addition to the team, and I can say that she’s been the best co-op I have ever mentored.
               </p>
               <a
-                href="https://www.linkedin.com/in/jiwondv/"
+                href="https://www.linkedin.com/in/jason-sevigny/"
                 class="linkedIn"
-                target="_blank"
+                target="blank"
               >
-                <p class="name">Son Seok-koo / Kinaxis</p>
+                <p class="name">Jason Sevigny - QA Manager, Core Web / Kinaxis</p>
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
       <!-- Contact -->
       <section id="contact" class="section">
         <h1 class="contact__title">Contact me</h1>
