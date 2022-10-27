@@ -1,6 +1,9 @@
-Global :root {
+/* Global*/
+:root {
   /* Color */
   --white: #ffffff;
+  --neutral-purple: #c0b3c2;
+  --vivid-purple: #e6ceff;
 
   /* Font size */
   --large: 48px;
@@ -15,12 +18,28 @@ Global :root {
   --regular: 400;
 
   /* Size */
+  --border-radius: 4px;
 }
 
 /* Universal tags */
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  curosr: default;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Typography */
@@ -33,17 +52,50 @@ h1 {
 h2 {
   font-size: var(--regular);
   font-weight: var(--semi-bold);
-  margin: 8px 0'
+  margin: 8px 0;
 }
 
 h3 {
-    font-size: var(--regular);
-    font-weight: var(--regular);
-    margin: 8px 0;
+  font-size: var(--regular);
+  font-weight: var(--regular);
+  margin: 8px 0;
 }
 
 p {
-    font-size: var(--regular);
-    font-weight: var(--regular);
-    margin: 4px 0;
+  font-size: var(--regular);
+  font-weight: var(--regular);
+  margin: 4px 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--neutral-purple);
+  align-items: center;
+  color: var(--white);
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__logo {
+  font-size: var(--small);
+}
+
+.navbar__menu__items {
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+.navbar__menu__items.active {
+  border: 1px solid white;
+}
+
+.navbar__menu__items:hover {
+  background-color: var(--vivid-purple);
 }
