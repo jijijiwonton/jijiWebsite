@@ -9,36 +9,38 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Shadows+Into+Light&family=Unna&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Shadows+Into+Light&family=Unna&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/jiwon.jpg" />
+    <title>Jiwon Hwang</title>
     <script src="main.js" defer></script>
-    <title>Jiwon Hwang - personal website</title>
   </head>
   <body>
     <!-- Navigation bar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <a href="#" class="navbar__author">Jiwon Hwang</a>
+        <i class="fa-brands fa-github" style="font-size:40px"></i>
+        <a href="#">DoJiwon</a>
       </div>
       <div>
         <ul class="navbar__menu">
-            <li class="navbar__menu__items active">Default</li>
-            <li class="navbar__menu__items">About</li>
-            <li class="navbar__menu__items">Technical</li>
-            <li class="navbar__menu__items">Project</li>
-            <li class="navbar__menu__items">Contact</li>
+            <li class="navbar__menu__items active" data-link="#default">Default</li>
+            <li class="navbar__menu__items" data-link="#about">About</li>
+            <li class="navbar__menu__items" data-link="#technical">Technical</li>
+            <li class="navbar__menu__items" data-link="#work">Project</li>
+            <li class="navbar__menu__items" data-link="#contact">Contact</li>
         </ul>
       </div>
     </nav>
 
       <!-- Default -->
       <section id="default">
+        <h1>Junior Software Developer</h1>
         <img src="images/jiwon.jpg" alt="jiwon_selfie" class="avatar" />
-
         <h1 class="default__title">Hi, I'm Jiwon</h1>
         <h2 class="default__description">
-          A junior level software developer <br />
+          I was working as a Co-op QA developer for 8 months. <br/>
           A potential person who has unlimited values in Canada!
         </h2>
         <button class="default__contact">Contact Jiwon</button>
@@ -211,9 +213,41 @@
        </div>
       </div>
      </section>
+      <!-- terstimonial -->
+    <section id="testimonial" class="section">
+      <div class="section__container">
+        <h1>Testimonial</h1>
+        <h3>What they say about me</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="image/testimonial__avatar.jpg"
+              alt=""
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speach">
+              <p>
+                Jiwon is very thorough and always asks good questions. <br/>
+                Her manual testing and automation skills are now on-par with that of a full-time Junior Test Developer. <br/>
+                I’ve heard amazing feedback not only from my team but also the dev team. And also, the Senior Dev Manager. <br/>
+                Her efforts are being noticed through the entire Front-End Technologies department. <br/>
+                Jiwon has been an amazing addition to the team, and I can say that she’s been the best co-op I have ever mentored.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/jiwondv/"
+                class="linkedIn"
+                target="_blank"
+              >
+                <p class="name">Son Seok-koo / Kinaxis</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
       <!-- Contact -->
       <section id="contact" class="section">
-        <h1 class="contact__title">Jiwon Hwang</h1>
+        <h1 class="contact__title">Contact me</h1>
         <h2 class="contact__email">ji04won30@gmail.com</h2>
         <div class="contact__links">
           <a href="https://github.com/jijijiwonton" target="blank">
