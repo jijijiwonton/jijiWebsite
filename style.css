@@ -1,5 +1,4 @@
-/* Global */
-:root {
+Global :root {
   /* Color */
   --white: #ffffff;
 
@@ -22,4 +21,29 @@
 
 * {
   box-sizing: border-box;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--large);
+  font-weight: var(--bold);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--regular);
+  font-weight: var(--semi-bold);
+  margin: 8px 0'
+}
+
+h3 {
+    font-size: var(--regular);
+    font-weight: var(--regular);
+    margin: 8px 0;
+}
+
+p {
+    font-size: var(--regular);
+    font-weight: var(--regular);
+    margin: 4px 0;
 }
