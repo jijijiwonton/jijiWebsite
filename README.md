@@ -9,10 +9,10 @@ Jiwon's Official website using Front-End technology.
 In progress ..
 
 ## Folder Structure
-|jijiWebsite
-&emsp;|-index.html
-&emsp;|-main.js
-&emsp;|-notes.html
-&emsp;|-style.css
+jijiWebsite</br>
+&emsp;|-index.html</br>
+&emsp;|-main.js</br>
+&emsp;|-notes.html</br>
+&emsp;|-style.css</br>
 
 ## Trigger
